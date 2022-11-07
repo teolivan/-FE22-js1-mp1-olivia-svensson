@@ -6,7 +6,7 @@ let rad5 = document.createElement('h1');
 
 let rader = [rad1, rad2, rad3, rad4, rad5];
 const bgc = ["#94ff97", "#b3ffb5", "#b3ffd7", "#b3fff1", "#b3e0ff"]
-const border = "10px solid #9999ff";
+const border = "12px solid #9999ff";
 
 for (let i = 0; i < rader.length; i++) {
     document.body.appendChild(rader[i]);
@@ -22,9 +22,10 @@ document.body.appendChild(boxen);
 
 boxen.style.border = "1px solid black";
 boxen.style.height = "400px";
-boxen.style.width = "98vw";
-boxen.style.position = "relative"
+boxen.style.width = "100vw";
 boxen.style.display = "flex"
+boxen.style.alignItems = "center"
+
 
 
 //första kolumnen
@@ -42,9 +43,10 @@ for (i in colnr1) {
 }
 
 boxen.append(cont1)
-cont1.style.width = "50px"
+cont1.style.width = "60px"
 cont1.style.border = border
-cont1.style.margin = "100px"
+cont1.style.marginLeft = "21.5vw"
+
 
 //andra kolumnen
 const colnr2 = [9,8,7,6,5,4,3,2,1]
@@ -62,9 +64,10 @@ for (i in colnr2) {
 
 
 boxen.append(cont2)
-cont2.style.width = "50px"
+cont2.style.width = "60px"
 cont2.style.border = border
-cont2.style.margin = "100px"
+cont2.style.margin = "20vw"
+cont2.style.textAlign = "center"
 
 
 //tredje kolumnen 
@@ -83,8 +86,9 @@ for (i in colnr3) {
 
 
 boxen.append(cont3)
-cont3.style.width = "50px"
+cont3.style.width = "60px"
 cont3.style.border = border
-cont3.style.margin = "100px"
+cont3.style.textAlign = "right"
+
 
 
