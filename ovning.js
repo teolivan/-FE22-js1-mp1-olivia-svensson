@@ -12,7 +12,7 @@ for (let i = 0; i < rader.length; i++) {
     document.body.appendChild(rader[i]);
     rader[i].style.textAlign = "center";
     rader[i].style.color = "#6670ff";
-    rader[i].innerText = `Rad ${i}`;
+    rader[i].innerText = `Rad ${i+1}`;
     rader[i].style.backgroundColor = bgc[i];
 }
 
