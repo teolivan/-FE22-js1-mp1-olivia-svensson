@@ -39,6 +39,8 @@ for (i in colnr1) {
     if (i % 2 === 0) {
         innercol1.style.backgroundColor = "#000000";
         innercol1.style.color = "#FFFFFF";
+    } else if (colnr1 === 4){
+        innercol1.style.backgroundColor = "#9999ff";
     }
 }
 
