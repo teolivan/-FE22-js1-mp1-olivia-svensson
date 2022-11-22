@@ -35,12 +35,14 @@ for (i in colnr1) {
     const innercol1 = document.createElement("div")
     cont1.append(innercol1)
     innercol1.innerText = `${colnr1[i]}`
-
+   
+    if (i == 3){
+        innercol1.style.backgroundColor = "#9999ff";
+        continue;
+    }
     if (i % 2 === 0) {
         innercol1.style.backgroundColor = "#000000";
         innercol1.style.color = "#FFFFFF";
-    } else if (colnr1 === 4){
-        innercol1.style.backgroundColor = "#9999ff";
     }
 }
 
@@ -57,7 +59,10 @@ for (i in colnr2) {
     const innercol2 = document.createElement("div")
     cont2.append(innercol2)
     innercol2.innerText = `${colnr2[i]}`
-
+    if (i == 1){
+        innercol2.style.backgroundColor = "#9999ff";
+        continue;
+    }
     if (i % 2 === 0) {
         innercol2.style.backgroundColor = "#000000";
         innercol2.style.color = "#FFFFFF";
@@ -79,7 +84,10 @@ for (i in colnr3) {
     const innercol3 = document.createElement("div")
     cont3.append(innercol3)
     innercol3.innerText = `${colnr3[i]}`
-
+    if (colnr3[i] == "sex"){
+        innercol3.style.backgroundColor = "#9999ff";
+        continue;
+    }
     if (i % 2 === 0) {
         innercol3.style.backgroundColor = "#000000"
         innercol3.style.color = "#FFFFFF"
